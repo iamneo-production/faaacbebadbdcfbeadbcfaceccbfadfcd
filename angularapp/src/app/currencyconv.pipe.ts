@@ -55,7 +55,7 @@ export class CurrencyconvPipe implements PipeTransform {
 
 
     let result: number = Math.round((value * tovalue) / fromvalue);
-    // result = parseInt(result.toFixed(2));
+    result = parseInt(result.toFixed(2));
     return result.toFixed(2);
   }
 
